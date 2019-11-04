@@ -1,4 +1,4 @@
-# NgB3Tp1
+# NgB3Tp1 _ Hélène BOITEUX
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.17.
 
