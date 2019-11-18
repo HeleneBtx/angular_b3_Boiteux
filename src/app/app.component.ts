@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ng-b3-tp1';
+  // stylevar = 'pointer';
+  // cursorBool = false;
 }
+
