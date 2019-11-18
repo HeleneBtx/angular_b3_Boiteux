@@ -1,1 +1,25 @@
-<p>login works!</p>
+<form action="action_page.php" method="post">
+
+  <div class="imgcontainer">
+    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/08207f3c-8886-4046-9aed-e0c003891c20/d24pi4i-7deb7a86-139e-4f04-b3d4-3f6acc7ff34b.jpg/v1/fill/w_800,h_600,q_75,strp/horse_by_ladowska_d24pi4i-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjAwIiwicGF0aCI6IlwvZlwvMDgyMDdmM2MtODg4Ni00MDQ2LTlhZWQtZTBjMDAzODkxYzIwXC9kMjRwaTRpLTdkZWI3YTg2LTEzOWUtNGYwNC1iM2Q0LTNmNmFjYzdmZjM0Yi5qcGciLCJ3aWR0aCI6Ijw9ODAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.Wno7ujJrykx53ZUkSRlGog1ZMO01JTeuPjlHobEjmGU" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="user_name"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="user_name" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+
+</form>
