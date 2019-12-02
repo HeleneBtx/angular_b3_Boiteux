@@ -28,6 +28,7 @@
               "src/assets"
             ],
             "styles": [
+              "./src/assets/aquamarine-mediumvioletred.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -93,6 +94,7 @@
               "src/assets"
             ],
             "styles": [
+              "./src/assets/aquamarine-mediumvioletred.css\",",
               "src/styles.scss"
             ],
             "scripts": []
@@ -124,6 +126,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "ng-b3-tp1"
 }

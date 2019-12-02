@@ -1,21 +1,36 @@
 :host{
-  header{
+  header {
     background-color: aquamarine;
     width: 100%;
-    height: 50px;
+    height: 60px;
     //position: fixed;
     position: relative;
     top: 0;
     left: 0;
     margin: 0;
+    padding: 0;
 
-    div{
+    ul {
+      padding: 0;
+    }
+
+    div, li{
       min-width: 33.33%;
       display: inline-block;
-      margin: 20px 0;
+      margin: 25px 10px;
       text-align: center;
-      font-weight: bold;
+      //font-weight: bolder;
+
+      a{
+        text-decoration: none;
+        color: white;
+      }
     }
+
+    .example-spacer {
+      flex: 1 1 auto;
+    }
+
   }
 
   //div:first-of-type{
