@@ -1,5 +1,7 @@
 # NgB3Tp1 _ Hélène BOITEUX
 
+![buildstatus](https://github.com/helenebtx/angular_b3_Boiteux/workflows/Angular%20CI/badge.svg)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.17.
 
 ## Development server
