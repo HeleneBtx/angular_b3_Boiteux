@@ -1,7 +1,7 @@
 import IAddress from './IAddress';
 import ICompany from './ICompany';
 
-interface IUser {
+export default interface IUser {
   id: number;
   name: string;
   username: string;

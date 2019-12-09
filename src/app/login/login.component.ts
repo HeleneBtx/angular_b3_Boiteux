@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {MatSnackBar} from '@angular/material';
 import {HttpClient, HttpErrorResponse} from '@angular/common/http';
-import IUser from './models/IUser';
+import IUser from '../models/IUser';
 
 @Component({
   selector: 'app-login',
@@ -33,7 +33,7 @@ export class LoginComponent implements OnInit {
 
   }
 
-  connexion(){
+  connexion() {
     // deb spinner
 
     this.http.get('http://jsonplaceholder.typicode.com/users/?username=' + this.login)
