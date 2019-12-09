@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ng-b3-tp1';
+  title = 'NgB3Tp1';
+  // title = 'ng-b3-tp1';
   // stylevar = 'pointer';
   // cursorBool = false;
 }

@@ -21,7 +21,9 @@ describe('LoginComponent', () => {
         MatCheckboxModule,
         MatSnackBarModule,
         MatToolbarModule,
-        HttpClientModule
+        HttpClientModule,
+        FormsModule,
+        BrowserAnimationsModule
       ]
     })
     .compileComponents();
