@@ -15,6 +15,7 @@ export class LoginComponent implements OnInit {
   psw: string;
   logged = false;
   message: string;
+  error = false;
 
   constructor(private _snackBar: MatSnackBar, private http: HttpClient) { }
 
@@ -36,16 +37,18 @@ export class LoginComponent implements OnInit {
   connexion() {
     // deb spinner
 
-    this.http.get('http://jsonplaceholder.typicode.com/users/?username=' + this.login)
+    this.http.get('https://jsonplaceholder.typicode.com/users/?username=' + this.login)
       .subscribe(  (value: IUser[]) => {
         if (value.length === 1) {
-          console.log(value[0].company.name);
+          // console.log(value[0].company.name);
           this.logged = true;
           this.message = 'Bienvenue ' + this.login + ', vous êtes connecté.';
           this._snackBar.open(this.message, '', {
               duration: 2000,
             });
           // fin spinner
+        } else {
+          this.error = true;
         }
         // console.log('get: ' + this.login, value.length);
       }, (error1: HttpErrorResponse) => {
