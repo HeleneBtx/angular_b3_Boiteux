@@ -1,6 +1,6 @@
 :host{
   footer{
-    background-color: aquamarine;
+    // background-color: #ccffef;
     width: 100%;
     height: 50px;
     position: fixed;
@@ -11,10 +11,10 @@
     div{
       min-width: 33.33%;
       display: inline-block;
-      margin: -15px 0;
+      margin: -20px 0;
       text-align: center;
-      //font-weight: bold;
       font-size: small;
+      color: black;
     }
   }
 }

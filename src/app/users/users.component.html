@@ -1,0 +1,95 @@
+<div class="container">
+
+    <h2>Liste Users</h2> 
+    <br>
+    <div>
+        <table class="customers">
+            <tr>
+                <th>id</th>
+                <th>name</th>
+                <th>username</th>
+                <th>email</th>
+                <th>address</th>
+                <th>phone</th>
+                <th>company</th>
+                <th>website</th>
+            </tr>
+            <tr *ngFor="let user of users">
+                <td>{{user.id}}</td>
+                <td>{{user.name}}</td>
+                <td>{{user.username}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.address.city}} 
+                    
+                    <div class="dropdown">
+                        <button class="dropbtn">+</button>
+                        <div class="dropdown-content">
+                            <table class="customers">
+                            <th>street</th>
+                            <tr>
+                            </tr>
+                            <td>{{user.address.street}}</td>
+                            <tr>
+                                <th>suite</th>
+                            </tr>
+                            <tr>
+                                <td>{{user.address.suite}}</td>
+                            </tr>
+                            <tr>
+                                <th>city</th>
+                            </tr>
+                            <tr>
+                                <td>{{user.address.city}}</td>
+                            </tr>
+                            <tr>
+                                <th>zipcode</th>
+                            </tr>
+                            <tr>
+                                <td>{{user.address.zipcode}}</td>
+                            </tr>
+                            <tr>
+                                <th>geo lat lng</th>
+                            </tr>
+                            <tr>
+                                <td>lat: {{user.address.geo.lat}}</td>
+                            </tr>
+                            <tr>
+                                <td>lng: {{user.address.geo.lng}}</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div> 
+                </td>
+                <td>{{user.phone}}</td>
+                <td>{{user.company.name}}
+                    
+                    <div class="dropdown">
+                        <button class="dropbtn">+</button>
+                        <div class="dropdown-content">
+                            <table class="customers">
+                            <tr>
+                                <th>catchPhrase</th>
+                            </tr>
+                            
+                            <tr>
+                                <td>{{user.company.catchPhrase}}</td>
+                            </tr>
+                            <tr>
+                                <th>bs</th>
+                            </tr>
+                            <tr>
+                                <td>{{user.company.bs}}</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div> 
+
+                </td>
+                <td>{{user.website}}</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>

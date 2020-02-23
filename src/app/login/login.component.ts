@@ -17,55 +17,29 @@ export class LoginComponent implements OnInit {
   message: string;
   error = false;
 
+  // tslint:disable-next-line:variable-name
   constructor(private _snackBar: MatSnackBar, private http: HttpClient) { }
 
-  // openSnackBar(message: string, action: string) {
-  //   if (this.login === 'admin' && this.psw === 'admin') {
-  //     message = 'ok';
-  //   } else {
-  //     message = 'pas ok';
-  //   }
-  //   this._snackBar.open(message, action, {
-  //     duration: 2000,
-  //   });
-  // }
-
   ngOnInit() {
-
   }
 
   connexion() {
-    // deb spinner
 
     this.http.get('https://jsonplaceholder.typicode.com/users/?username=' + this.login)
       .subscribe(  (value: IUser[]) => {
         if (value.length === 1) {
-          // console.log(value[0].company.name);
           this.logged = true;
           this.message = 'Bienvenue ' + this.login + ', vous êtes connecté.';
           this._snackBar.open(this.message, '', {
               duration: 2000,
             });
-          // fin spinner
         } else {
           this.error = true;
         }
-        // console.log('get: ' + this.login, value.length);
+
       }, (error1: HttpErrorResponse) => {
         console.error('error1', error1);
-        // fin spinner
       });
 
-    // console.log('login : ', this.login);
-    // console.log('password : ', this.psw);
-    // if (this.login === 'admin' && this.psw === 'admin'){
-    //   this.logged = true;
-    //   this.message = 'ok';
-    // } else {
-    //   this.message = 'pas ok';
-    // }
-    // this._snackBar.open(this.message, '', {
-    //   duration: 2000,
-    // });
   }
 }

@@ -1,9 +1,11 @@
 :host{
   .example-form {
-    //min-width: 150px;
-    //max-width: 500px;
     width: 50%;
     margin: 0 25%;
+
+    button{
+      color: black;
+    }
   }
 
   .example-full-width {
@@ -26,15 +28,9 @@
   span.psw {
     float: right;
     font-size: small;
-    //padding-top: 16px;
     margin-bottom: 12px;
   }
-
-  //div.container{
-  //  width: 40%;
-  //  margin: 0 30%;
-  //}
-
+  
   .remember{
     color: #222;
     font-size: small;
